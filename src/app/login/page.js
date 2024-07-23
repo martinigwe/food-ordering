@@ -2,7 +2,6 @@
 import { useState } from "react";
 import {signIn} from "next-auth/react";
 import Image from "next/image";
-import isAdmin from "@/app/api/admin/route";
 
 export default function LoginPage() {
     const [email, setEmail] = useState('');

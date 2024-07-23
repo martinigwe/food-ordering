@@ -7,7 +7,6 @@ import Trash from "@/components/icons/Trash"
 import AddressInput from "@/components/layout/AddressInput";
 import { useProfile } from "@/components/UseProfile";
 import toast from "react-hot-toast";
-import isAdmin from "@/app/api/admin/route";
 import CartProduct from "@/components/menu/CartProduct";
 export default function CartPage() {
     const {cartProducts, removeCartProduct} = useContext(CartContext);

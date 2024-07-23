@@ -2,7 +2,6 @@
 import SectionHeaders from "@/components/layout/SectionHeaders";
 import MenuItem from "@/components/menu/MenuItem";
 import { useEffect, useState } from "react"
-import isAdmin from "@/app/api/admin/route";
 
 export default function MenuPage() {
     const [categories, setCategories] = useState([]);
