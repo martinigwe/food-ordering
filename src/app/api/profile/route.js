@@ -4,6 +4,7 @@ import { getServerSession } from "next-auth";
 import {authOptions} from "@/app/api/auth/[...nextauth]/route";
 import { User } from "@/models/User";
 import { UserInfo } from "../../../models/UserInfo";
+import isAdmin from "@/app/api/admin/route";
 
 export async function PUT(req) {
     mongoose.connect(process.env.MONGO_URL);

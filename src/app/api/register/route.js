@@ -2,6 +2,7 @@
 import {User} from "@/models/User"
 import mongoose from "mongoose";
 import bcrypt from "bcrypt";
+import isAdmin from "@/app/api/admin/route";
 
 export async function POST(req) {
     const body = await req.json();

@@ -2,7 +2,7 @@
 import { SessionProvider } from "next-auth/react";
 import { createContext, useEffect, useState } from "react";
 import toast from "react-hot-toast";
-
+import isAdmin from "@/app/api/admin/route";
 export const CartContext = createContext({});
 
 export function cartProductPrice(cartProduct) {

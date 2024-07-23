@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import isAdmin from "@/app/api/admin/route";
 export function useProfile() {
     const [data, setData] = useState(false);
     const [loading, setLoading] = useState(true);

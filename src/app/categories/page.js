@@ -3,7 +3,7 @@ import UserTabs from "@/components/layout/UserTabs";
 import { useEffect, useState } from "react";
 import { useProfile } from "../../components/UseProfile";
 import toast from "react-hot-toast";
-
+import isAdmin from "@/app/api/admin/route";
 import DeleteButton from "@/components/DeleteButton";
 export default function CategoriesPage() {
    

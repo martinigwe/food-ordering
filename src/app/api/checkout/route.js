@@ -3,6 +3,8 @@ import {authOptions} from "@/app/api/auth/[...nextauth]/route";
 import { getServerSession } from "next-auth";
 import { Order } from "@/models/Order";
 import {MenuItem} from "@/models/Menuitem";
+import isAdmin from "@/app/api/admin/route";
+
 const stripe = require('stripe')(process.env.STRIPE_SK);
 
 export async function POST(req) {
